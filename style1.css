@@ -1,0 +1,31 @@
+*{
+    font-family: serif;
+}
+
+body form{
+    margin: 25px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 25px;
+}
+
+form div
+{
+    margin: 5px;
+    padding: 12px;
+    justify-content: center;
+}
+
+button
+{
+    margin-top: 30px;
+    margin-left: 120px;
+    height: 35px;
+    width: 60px;
+}
+
+form div label
+{
+    justify-content: left;
+    margin: 20px;
+}

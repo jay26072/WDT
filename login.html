@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <form method="post">
+        <div class="username">
+            <label for="uname">Username:</label>
+            <input type="text" name="uname" id="uname" placeholder="Enter Username" required>
+        </div>
+
+        <div class="password">
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password" required>
+        </div>
+
+        <button type="submit" id="login" onclick="check_user();">Login</button>
+    </form>
+
+    <script>
+        function check_user(){
+            var uname=document.getElementById('uname').value;
+            var pass=document.getElementById('pass').value;
+
+            console.log(pass.value.length);
+
+            var rex=/([0-9+_@#])/;
+            
+            if (uname=='') 
+                alert('Enter Username');   
+
+            if (uname.match(rex)) 
+                alert('Invalid Username');    
+
+            if(pass.length < 8)
+                alert('Password Must Be 8-16 Characters');
+        }
+    </script>
+</body>
+</html>

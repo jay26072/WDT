@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function msg()
+        {
+            alert("Data Accepted");
+        }
+    </script>
+    <title>Resume</title>
+  </head>
+  <body>
+    <form method="post" onsubmit="msg();">
+      
+        <div>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" />
+      </div>
+
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" />
+      </div>
+
+      <div>
+        <label for="dob">Date Of Birth:</label>
+        <input type="dob" name="dob" id="dob" />
+      </div>
+
+      <div>
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="gender" />
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender" />
+        <label for="gender">Female</label>
+      </div>
+
+      <div>
+        <label>Technical Skills:</label>
+        <input type="checkbox" name="c" id="c">
+        <label for="c">C</label>
+        <input type="checkbox" name="cp" id="cp">
+        <label for="cp">C++</label>
+        <input type="checkbox" name="java" id="java">
+        <label for="java">Java</label>
+        <input type="checkbox" name="js" id="js">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="php" id="php">
+        <label for="php">PHP</label>
+      </div>
+
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id=email" placeholder="Abc@gmail.com">
+      </div>
+
+      <div>
+        <label for="pic">Profile Image:</label>
+        <input type="file" name="pic" id="pic" accept="/*.jpeg,.jpg,png">
+      </div>
+
+      <div>
+        <label for="mnum">Mobile No</label>
+        <input type="text" maxlength="10" name="mnum" id="mnum">
+      </div>
+
+      <div>
+      <label for="adres">Address</label>
+      <textarea name="adres" id="adres" placeholder="Enter Address"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>

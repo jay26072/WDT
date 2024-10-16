@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    <style>
+
+        /* Link */
+
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: red;
+        }
+
+        /* Table */
+        table{
+            border-collapse: collapse;
+        }
+
+        th,tr{
+            padding: 0 15px 5px;
+        }
+
+        tr:nth-child(even){
+            background-color: black;
+            color:white;
+        }
+        tr:nth-child(odd){
+            background-color: green;
+            color: white;
+        }
+        .upr{
+            text-transform: uppercase;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="link">
+        <p>Visit Our Website  <a href="#">Click Here</a></p>
+    </div>
+    <table border="3px">
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>Jay</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>ABCD</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Krish</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Kishan</th>
+        </tr>
+    </table>
+    <p class="upr">Hello I'm Jay Patel</p>
+</body>
+</html>
