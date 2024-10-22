@@ -1,0 +1,93 @@
+<!-- 2.HTML Forms: Design a form with various input types and validate it using HTML5 attributes. -->
+<html>
+<head>
+	<link rel="stylesheet" href="bootstrap-5.0.2\bootstrap-5.0.2\dist\css\bootstrap.min.css">
+</head>
+<body>
+<h2>Admission Registration Page</h2>
+<form method="post">
+	<div class="form-group col-sm-2">
+		<label>Student's Name<font color="red">*</font></label>
+		<input type="text" class="form-control" required name="txtname">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Email<font color="red">*</font></label>
+		<input type="email" class="form-control"  required name="txtemail">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Cell Number<font color="red">*</font></label>
+		<input type="text" class="form-control"  required name="txtcell">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Birth Date<font color="red">*</font></label>
+		<input type="date" class="form-control"  required name="txtbdate">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Leaving Certificate<font color="red">*</font></label>
+		<input type="file" class="form-control"  required name="txtlc">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>HSC No<font color="red">*</font></label>
+		<input type="text" class="form-control"  required name="txthscno">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>HSC Marksheet<font color="red">*</font></label>
+		<input type="file" class="form-control"  required name="txthscmark">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>SSC Marksheet<font color="red">*</font></label>
+		<input type="file" class="form-control"  required name="txtsscmark">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Stream<font color="red">*</font></label>
+		<select class="form-control"  required name="txtstr">
+		<option>Select Your Stream:</option>
+		<option>Arts</option>
+		<option>Commerce</option>
+		<option>Science</option>
+		</select>
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Percentage<font color="red">*</font></label>
+		<input type="text" class="form-control"  required name="txtper">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Photograph<font color="red">*</font></label>
+		<input type="file" class="form-control"  required name="txtpic">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<label>Cast<font color="red">*</font></label>
+		<select class="form-control"  required name="txtcast">
+		<option>Chose You Cast:</option>
+		<option>OPEN</option>
+		<option>ST</option>
+		<option>SE</option>
+		<option>OBC</option>
+		</select>
+		<br>
+	</div>
+    <br>
+	<div class="form-group  col-sm-2">
+		<label>Signature<font color="red">*</font></label>
+		<input type="file" class="form-control"  required name="txtsig">
+	</div>
+	<br>
+	<div class="form-group  col-sm-2">
+		<button class="btn btn-success">Login</button>
+		<button class="btn btn-danger">Reset</button>
+		<button class="btn btn-link">Forgot Password</button>
+	</div>
+</form>
+</body>
+</html>
