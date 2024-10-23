@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="6.css" />
+
+    <title>Events Handeling</title>
+  </head>
+  <body>
+    <h1>Events Handeling</h1>
+    <div class="grid-container">
+      <!-- Click -->
+      <div class="card">
+        <div class="click"></div>
+        <span>Click</span>
+      </div>
+
+      <!-- Mouse Over -->
+      <div class="card">
+        <div class="mover"></div>
+        <span>Mouse Over</span>
+      </div>
+
+      <!-- Mouse Remove -->
+      <div class="card">
+        <div class="mremove" style="background-color: green"></div>
+        <span>Mouse Remove</span>
+      </div>
+
+      <!-- Mouse Up -->
+      <div class="card">
+        <div class="mup"></div>
+        <span>Mouse Up</span>
+      </div>
+
+      <!-- Mouse Down -->
+      <div class="card">
+        <div class="mdown"></div>
+        <span>Mouse Down</span>
+      </div>
+
+      <!-- On input -->
+      <div class="card">
+        <div>
+            <div class="oninput"></div>
+        </div>
+        <span><input type="text" id="input"></span>
+      </div>
+    </div>
+    <script>
+      // Click
+      const click = document.querySelector(".click");
+      click.addEventListener("click", () => {
+        alert("Click");
+      });
+
+      // Mouse Over
+      const mover = document.querySelector(".mover");
+      mover.addEventListener("mouseover", () => {
+      mover.style.backgroundColor = "#f7444e";
+      });
+
+      // Mouse Remove
+      const mremove = document.querySelector(".mremove");
+      mremove.addEventListener("mouseout", () => {
+        mremove.style.backgroundColor = "#788CC4";
+        alert("Mouse Remove");
+      });
+
+      // Mouse Up
+      const mup = document.querySelector(".mup");
+      mup.addEventListener("mouseup", () => {
+        alert("Mouse Up");
+      });
+
+      // Mouse Down
+      const mdown = document.querySelector(".mdown");
+      mdown.addEventListener("mousedown", () => {
+        alert("Mouse Down");
+      });
+
+      // On input
+      const box = document.querySelector(".oninput");
+      const input = document.querySelector("input");
+      input.addEventListener("input", () => {
+        box.style.borderRadius = input.value;
+        box.style.background = input.value;
+      });
+    </script>
+  </body>
+</html>

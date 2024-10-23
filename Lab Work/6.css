@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: rgb(13, 13, 50);
+    padding: min(50px, 7%);
+}
+h1{
+    margin: 30px 0;
+}
+.card{
+    padding: 1em 0 1em 0;
+    border: 1px solid rgb(75, 82, 92);
+    border-radius: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 15px;
+    background-color: #222429;
+    justify-content: center;
+}
+.card div{
+    height: 120px;
+    background-color: white;
+}
+span{
+    display: inline-block;
+    padding-top: 10px;
+}
+.card div > .onput{
+    padding-top: 12px;
+}
+.card .oninput{
+    padding: 15px;
+    border: 2px solid black; 
+    height: 30px;
+}

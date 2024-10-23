@@ -1,4 +1,4 @@
-<!-- 3.CSS Styling: Apply CSS to an HTML document to style text, borders, backgrounds, and layouts using the Box Model. -->
+<!-- 4.Responsive Design: Create a responsive webpage using CSS media queries. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,6 +58,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
       }
+
       .box h2 {
         margin-top: 0;
       }
@@ -66,6 +67,22 @@
         padding: 10px;
         border: 1px solid #ddd;
         background-color: #f9f9f9;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+        }
+
+        .box {
+          margin: 20px 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .box {
+          margin: 10px;
+        }
       }
     </style>
   </head>

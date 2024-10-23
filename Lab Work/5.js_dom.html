@@ -1,0 +1,39 @@
+<!-- 5.JavaScript Basics: Write a JavaScript script to perform basic arithmetic operations and manipulate the DOM. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Arithmatic Operations</title>
+    <script>
+      function operation() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+     
+        document.getElementById("add").innerHTML = "Addition is: " + (parseInt(num1) + parseInt(num2));
+        document.getElementById("sub").innerHTML = "Subtraction is: " + (parseInt(num1) - parseInt(num2));
+        document.getElementById("multi").innerHTML = "Multiplication is: " + (parseInt(num1) * parseInt(num2));
+        document.getElementById("divis").innerHTML = "Division is: " + (parseInt(num1) / parseInt(num2));
+        document.getElementById("mod").innerHTML = "Modulus is: " + (parseInt(num1) % parseInt(num2));
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1">
+
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2">
+
+        <button type="submit" onclick="operation();">Calculate</button>
+    </div>
+    <div>
+      <h3 id="add">Addition is:</h3>
+      <h3 id="sub">Subtraction is:</h3>
+      <h3 id="multi">Multiplication is:</h3>
+      <h3 id="divis">Division is:</h3>
+      <h3 id="mod">Modulus is:</h3>
+    </div>
+  </body>
+</html>
