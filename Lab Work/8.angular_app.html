@@ -1,0 +1,29 @@
+<!-- 8.AngularJS Application: Develop a single-page application (SPA) using AngularJS that includes a module, controller, and view. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Application</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl" ng-init="num1=20;num2=10">
+        <h1>{{hello}}</h1>
+
+        <h1>Addition Is : {{num1+num2}}</h1>
+        <h1>Subtraction Is : {{num1-num2}}</h1>
+        <h1>Multiplication Is : {{num1*num2}}</h1>
+        <h1>Division Is : {{num1/num2}}</h1>
+        <h1>Modulus Is : {{num1%num2}}</h1>
+    </div>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope) {
+            $scope.hello = "Hello from AngularJS";
+        });
+    </script>
+    
+</body>
+</html>
